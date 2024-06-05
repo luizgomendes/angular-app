@@ -1,0 +1,11 @@
+<div>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name<input id="name" type="text" formControlName="name"/></label>
+    <label for="departmentCode">Department Code<input id="departmentCode" type="text" formControlName="departmentCode"/></label>
+    <label for="hiringDate">Hiring Date<input id="hiringDate" type="date" formControlName="hiringDate"/></label>
+    <label for="birthday">Birthday<input id="birthday" type="date" formControlName="birthday"/></label>
+    <label for="salary">Salary<input id="salary" type="number" formControlName="salary"/></label>
+    <button type="submit" [disabled]="!userForm.valid">Submit</button>
+  </form>
+
+</div>
